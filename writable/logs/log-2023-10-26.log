@@ -1,0 +1,873 @@
+WARNING - 2023-10-26 00:03:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+INFO - 2023-10-26 00:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 00:03:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 00:03:56 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT tagihan....', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tagihan....')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tagihan....')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan....')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 00:03:56 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan.*, siswa.nama_siswa as nama_siswa, tahun_ajaran.tahun_ajaran as tahun_ajaran FROM tagihan join siswa on tagihan.id_siswa = siswa.id join tahun_ajaran on tagihan.id_tahun_ajaran = tahun_ajaran.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_1.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 00:03:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 00:03:56 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT tagihan....', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tagihan....')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tagihan....')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan....')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 00:03:56 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan.*, siswa.nama_siswa as nama_siswa, tahun_ajaran.tahun_ajaran as tahun_ajaran FROM tagihan join siswa on tagihan.id_siswa = siswa.id join tahun_ajaran on tagihan.id_tahun_ajaran = tahun_ajaran.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_2.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 00:03:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 00:03:56 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT tagihan....', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tagihan....')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tagihan....')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan....')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 00:03:56 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan.*, siswa.nama_siswa as nama_siswa, tahun_ajaran.tahun_ajaran as tahun_ajaran FROM tagihan join siswa on tagihan.id_siswa = siswa.id join tahun_ajaran on tagihan.id_tahun_ajaran = tahun_ajaran.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_3.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 00:03:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 00:03:57 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT tagihan....', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tagihan....')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tagihan....')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan....')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile....')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 00:03:57 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan.*, siswa.nama_siswa as nama_siswa, tahun_ajaran.tahun_ajaran as tahun_ajaran FROM tagihan join siswa on tagihan.id_siswa = siswa.id join tahun_ajaran on tagihan.id_tahun_ajaran = tahun_ajaran.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 00:03:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 00:03:59 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT tagihan....', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tagihan....')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tagihan....')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan....')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile....')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 00:03:59 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan.*, siswa.nama_siswa as nama_siswa, tahun_ajaran.tahun_ajaran as tahun_ajaran FROM tagihan join siswa on tagihan.id_siswa = siswa.id join tahun_ajaran on tagihan.id_tahun_ajaran = tahun_ajaran.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 00:03:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 00:03:59 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT tagihan....', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tagihan....')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tagihan....')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan....')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 00:03:59 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan.*, siswa.nama_siswa as nama_siswa, tahun_ajaran.tahun_ajaran as tahun_ajaran FROM tagihan join siswa on tagihan.id_siswa = siswa.id join tahun_ajaran on tagihan.id_tahun_ajaran = tahun_ajaran.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_1.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 00:04:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 00:04:00 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT tagihan....', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tagihan....')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tagihan....')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan....')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 00:04:00 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan.*, siswa.nama_siswa as nama_siswa, tahun_ajaran.tahun_ajaran as tahun_ajaran FROM tagihan join siswa on tagihan.id_siswa = siswa.id join tahun_ajaran on tagihan.id_tahun_ajaran = tahun_ajaran.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_2.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 00:04:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 00:04:00 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT tagihan....', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tagihan....')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tagihan....')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan....')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 00:04:00 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(36): CodeIgniter\Database\BaseConnection->query('SELECT tagihan.*, siswa.nama_siswa as nama_siswa, tahun_ajaran.tahun_ajaran as tahun_ajaran FROM tagihan join siswa on tagihan.id_siswa = siswa.id join tahun_ajaran on tagihan.id_tahun_ajaran = tahun_ajaran.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->detailtransaksi('img', 'undraw_profile_3.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 00:04:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+INFO - 2023-10-26 00:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 00:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+INFO - 2023-10-26 00:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 00:04:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+INFO - 2023-10-26 00:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 00:11:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+INFO - 2023-10-26 00:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 00:11:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+CRITICAL - 2023-10-26 00:11:58 --> Undefined variable $data
+in APPPATH\Controllers\transaksiController.php on line 75.
+ 1 APPPATH\Controllers\transaksiController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\spp\\app\\Controllers\\transaksiController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('10')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:28:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+CRITICAL - 2023-10-26 01:28:10 --> Invalid file: "bendahara/transaksi/riwayat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('bendahara/transaksi/riwayat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('bendahara/transaksi/riwayat', [], true)
+ 3 APPPATH\Controllers\transaksiController.php(76): view('bendahara/transaksi/riwayat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('10')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:45:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:45:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '. transaksi.nominal as nominal FROM transaksi join tagihan on transaksi.id_ta...' at line 1 in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('10')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:45:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '. transaksi.nominal as nominal FROM transaksi join tagihan on transaksi.id_ta...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa. transaksi.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('10')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:45:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:45:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '. tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagi...' at line 1 in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('10')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:45:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '. tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagi...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa. tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('10')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:46:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+INFO - 2023-10-26 01:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 01:46:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:46:14 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:46:14 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_1.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:46:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:46:14 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:46:14 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_2.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:46:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:46:14 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:46:14 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_3.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:46:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:46:15 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile....')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:46:15 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:46:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:46:16 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile....')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:46:16 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:46:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:46:17 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:46:17 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_1.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:46:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:46:17 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:46:17 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_2.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:46:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:46:17 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:46:17 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_3.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:47:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+INFO - 2023-10-26 01:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 01:47:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:47:48 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile....')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:47:48 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:47:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:47:48 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:47:48 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_1.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:47:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:47:49 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:47:49 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_2.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:47:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:47:49 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:47:49 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_3.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:48:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+INFO - 2023-10-26 01:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 01:48:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:48:40 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile....')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:48:40 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:48:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:48:41 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:48:41 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_1.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:48:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:48:41 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:48:41 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_2.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:48:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:48:41 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:48:41 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_3.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:49:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+INFO - 2023-10-26 01:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 01:49:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:49:34 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile....')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:49:34 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:49:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:49:34 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:49:34 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_1.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:49:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:49:34 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:49:34 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_2.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+WARNING - 2023-10-26 01:49:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\transaksiController::$db is deprecated in APPPATH\Controllers\BaseController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
+ERROR - 2023-10-26 01:49:35 --> mysqli_sql_exception: Unknown column 'img' in 'where clause' in C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\spp\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT transaks...', 0)
+#1 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT transaks...')
+#2 C:\xampp\htdocs\spp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT transaks...')
+#3 C:\xampp\htdocs\spp\app\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaks...')
+#4 C:\xampp\htdocs\spp\system\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_...')
+#5 C:\xampp\htdocs\spp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+#6 C:\xampp\htdocs\spp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\spp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\spp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-10-26 01:49:35 --> Unknown column 'img' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\transaksiController.php(73): CodeIgniter\Database\BaseConnection->query('SELECT transaksi.*, tagihan.id_siswa as id_siswa, tagihan.nominal as nominal FROM transaksi join tagihan on transaksi.id_tagihan = tagihan.id where tagihan.id_siswa = img')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\transaksiController->riwayatpembayaran('img', 'undraw_profile_3.svg')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\transaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\spp\\public\\index.php')
