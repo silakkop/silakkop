@@ -93,7 +93,7 @@
                                                 
 
                                     </form>
-                                    <a href="<?= site_url('forgot') ?>" class="text-tengah">Lupa Password</a>
+                                    <a href="<?= site_url('forgot') ?>" class="text-tengah">Lupa Password?</a>
                                 </div>
                                 <div class="col-md-2">
                                     
